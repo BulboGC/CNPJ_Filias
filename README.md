@@ -1,5 +1,7 @@
   <h1 aling="center">CNPJ_Filiais</h1>
-<h4>Para utilizalo primeiro precisa instalar as dependencias com o comando(lembrando que deve estar na pasta do projeto)</h4>
+<h4>Para utilizalo primeiro precisa instalar as dependencias com o comando:</h4>
+>O cmd deve estar na pasta dos arquivos, caso não esteja é só navegar com 'cd'
+
 
 ```
 pip install -r requirements.txt 
