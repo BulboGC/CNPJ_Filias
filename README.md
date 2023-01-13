@@ -1,7 +1,7 @@
   <h1 aling="center">CNPJ_Filiais</h1>
-Para utilizalo primeiro precisa instalar as dependencias com o comando(**lembrando que deve estar na pasta do projeto**)</br>
+<h4>Para utilizalo primeiro precisa instalar as dependencias com o comando(**lembrando que deve estar na pasta do projeto**)</h4>
 ``` pip install -r requirements.txt ```
-Após isso você pode ver que existe uma classe "Srap" no index.py</br>
+</h4>Após isso você pode ver que existe uma classe "Srap" no index.py</h4>
 Dentro dela tem os dados que serão utilizados, entao no self.SITE_LIST_CNPJ = []</br>
 Você vai colocar os CNPJs que deseja buscar, olha um exemplo:</br>
 ``` self.SITE_LIST_CNPJ = ['CNPJAQUI','OUTROCNPJAQUI','OUTROCNPJ']```
