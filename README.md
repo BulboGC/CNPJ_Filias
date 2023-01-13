@@ -13,7 +13,10 @@ pip install -r requirements.txt
 self.SITE_LIST_CNPJ = ['CNPJAQUI','OUTROCNPJAQUI','OUTROCNPJ']
 ```
 
-<h4>Após isso é só salvar as alterações e executar com:(windos) </h4>
+<h4>Após isso é só salvar as alterações e executar o programa </h4>
+
+
+<h4>No windows o comando é: </h4>
 
 
 ```
