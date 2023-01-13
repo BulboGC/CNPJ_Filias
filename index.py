@@ -149,7 +149,6 @@ for CNPJ in tqdm(Firefox.SITE_LIST_CNPJ,'Lojas ja pegadas'):
 
 
  
-
 Firefox.browser.close()
 
 
