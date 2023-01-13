@@ -1,6 +1,6 @@
   <h1 aling="center">CNPJ_Filiais</h1>
-<h4>Para utilizalo primeiro precisa instalar as dependencias com o comando:</h4>
 <h6>O cmd deve estar na pasta dos arquivos, caso não esteja é só navegar com 'cd'</h6>
+<h4>Para utilizalo é necessário instalar as dependencias com o comando:</h4>
 
 
 ```
