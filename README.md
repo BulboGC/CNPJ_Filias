@@ -13,5 +13,19 @@ pip install -r requirements.txt
 self.SITE_LIST_CNPJ = ['CNPJAQUI','OUTROCNPJAQUI','OUTROCNPJ']
 ```
 
-<h4>Após isso é só salvar as alterações e executar com python index.py(windos) python3 index.py no linux</h4>
+<h4>Após isso é só salvar as alterações e executar com:(windos) </h4>
+
+
+```
+python index.py
+```
+
+<h4> Caso esteja no  linux você coloca também a versão, no caso como meu python é o 3.11 ficaria assim: </h4>
+
+
+```
+ python3 index.py
+```
+
+
 </h3>OBS: o programa só funciona se você tiver Firefox instalado</h3>
