@@ -13,7 +13,7 @@ class Scrap:
         self.SITE_LINK = "https://cnpj.linkana.com"
         #********************* CNPJs QUE VAI PROCURAR COLOCAR NESSA LISTA*********************************
         #*********************VVVVVVVVVVVVVVVVVVVVVV**********************************
-        self.SITE_LIST_CNPJ = []
+        self.SITE_LIST_CNPJ = ['35.797.832/0001-65']
         self.SITE_PATH_ARQUIVO_CSV = 'G:\\python scrapy\\'
         self.SITE_MAP = {
             'dados':{
@@ -24,7 +24,7 @@ class Scrap:
                 'endereco':{'xpath':'/html/body/div/div/main/div[2]/ul[2]/li[2]/div/p[2]'},
                 'cidade':{'xpath':'/html/body/div/div/main/div[2]/ul[2]/li[3]/div[1]/p[2]'},
                 'estado':{'xpath':'/html/body/div/div/main/div[2]/ul[2]/li[3]/div[2]/p'},
-                'email':{'xpath':'VOUPEGAR'},
+                'email':{'xpath':'/html/body/div/div/main/div[2]/ul[2]/li[4]/p'},
                 'telefone':{'xpath': '/html/body/div/div/main/div[2]/ul[2]/li[5]/p'}
         },
             'elements':{'ul':{'xpath':'/html/body/div/div/main/div[2]/div[5]/ul/li[$$NUMBER$$]/a'}},
@@ -129,7 +129,13 @@ for CNPJ in tqdm(Firefox.SITE_LIST_CNPJ,'Lojas ja pegadas'):
         obj['razao_social'] = Firefox.Coletar_Content_value(Firefox.SITE_MAP['dados']['razao_social']['xpath']) 
         obj['situacao'] = Firefox.Coletar_Content_value(Firefox.SITE_MAP['dados']['situacao']['xpath'])
         obj['link'] = link
-        obj['cnpj'] = Firefox.Coletar_Content_value(Firefox.SITE_MAP['dados']['cnpj']['xpath'])    
+        obj['cnpj'] = Firefox.Coletar_Content_value(Firefox.SITE_MAP['dados']['cnpj']['xpath']) 
+        obj['cep']  = Firefox.Coletar_Content_value(Firefox.SITE_MAP['dados']['cep']['xpath']) 
+        obj['endereco'] = Firefox.Coletar_Content_value(Firefox.SITE_MAP['dados']['endereco']['xpath']) 
+        obj['cidade'] = Firefox.Coletar_Content_value(Firefox.SITE_MAP['dados']['cidade']['xpath']) 
+        obj['estado'] = Firefox.Coletar_Content_value(Firefox.SITE_MAP['dados']['estado']['xpath']) 
+        obj['email'] = Firefox.Coletar_Content_value(Firefox.SITE_MAP['dados']['email']['xpath']) 
+        obj['telefone'] = Firefox.Coletar_Content_value(Firefox.SITE_MAP['dados']['telefone']['xpath']) 
         Firefox.DATABASE.append(obj)
   
     c = 0
