@@ -13,7 +13,7 @@ class Scrap:
         self.SITE_LINK = "https://cnpj.linkana.com"
         #********************* CNPJs QUE VAI PROCURAR COLOCAR NESSA LISTA*********************************
         #*********************VVVVVVVVVVVVVVVVVVVVVV**********************************
-        self.SITE_LIST_CNPJ = ['35.797.832/0001-65']
+        self.SITE_LIST_CNPJ = []
         self.SITE_PATH_ARQUIVO_CSV = 'G:\\python scrapy\\'
         self.SITE_MAP = {
             'dados':{
